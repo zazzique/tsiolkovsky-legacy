@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{8917d587-3330-4776-b7c5-04666df6ad35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{65997036-cbd5-4712-a5de-e2bb454f954f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win32">
+      <UniqueIdentifier>{c5ee979d-58ea-47e1-a323-ede6b8ac7000}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Sources\Core\Common.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\CommonTypes.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\Core.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\CoreDefines.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\CoreVariables.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\FastMath.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\Font.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\GUIControls.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\ModelManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\Sound.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\Sprites.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\TextureManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Core\Vector.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Game\GameDefines.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Game\GameVariables.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Game\Menu.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Win32\Files.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Win32\main.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Win32\Render.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Win32\GLee.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Win32\Timer.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Win32\GameConfig.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Sources\Win32\Log.h">
+      <Filter>Win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\Core\Core.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Core\FastMath.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Core\Font.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Core\GUIControls.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Core\ModelManager.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Core\Sound.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Core\Sprites.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Core\TextureManager.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Core\Vector.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Game\Game.c">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Game\Menu.c">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Win32\Files.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Win32\main.cpp">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Win32\Render.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Core\CoreVariables.c">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Game\GameVariables.c">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Win32\GLee.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Win32\Timer.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Win32\GameConfig.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Win32\Log.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
