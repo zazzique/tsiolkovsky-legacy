@@ -38,6 +38,9 @@ extern U32 coins_count;
 extern BOOL gameplay_enabled;
 extern BOOL tutorial_mode;
 
+extern BOOL left_engine_override;
+extern BOOL right_engine_override;
+
 void Reset_Particles();
 
 void Game_MakeZoomEffect(float time, float zoom);

@@ -160,7 +160,7 @@ void Menu_Process()
 			GUI_MakeFadeWithEvent(MENU_EVENT_GAME_TO_MAIN, MENU_TIME_FADE_IN, MENU_TIME_FADE_OUT);
 		}
 
-		if (GUI_ControlIsTouched(game_left_engine))
+		if (GUI_ControlIsTouched(game_left_engine) || left_engine_override)
 		{
 			ship.left_engine_power = TRUE;
 
@@ -175,7 +175,7 @@ void Menu_Process()
 			ship.left_engine_power = FALSE;
 		}
 
-		if (GUI_ControlIsTouched(game_right_engine))
+		if (GUI_ControlIsTouched(game_right_engine) || right_engine_override)
 		{
 			ship.right_engine_power = TRUE;
 

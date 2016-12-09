@@ -85,6 +85,9 @@ BOOL tutorial_mode;
 
 float ingame_menu_k;
 
+BOOL left_engine_override;
+BOOL right_engine_override;
+
 void Game_MakeZoomEffect(float time, float zoom)
 {
 	zoom_time = time;
@@ -564,6 +567,9 @@ void Game_Init()
 	tutorial_mode = FALSE;
 
 	ingame_menu_k = 0.0f;
+
+	left_engine_override = FALSE;
+	right_engine_override = FALSE;
 
 	//////////////////
 

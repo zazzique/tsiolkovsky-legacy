@@ -8,10 +8,11 @@
 #include "Core.h"
 #include "Sprites.h"
 #include "GUIControls.h"
+#include "Game.h"
 #include "Menu.h"
 #include "main.h"
 
-#define TC_USE_CONSOLE
+//#define TC_USE_CONSOLE
 
 HGLRC           hRC = NULL;
 HDC             hDC = NULL;
@@ -110,6 +111,8 @@ void OpenGL_Release(HWND hWnd)
 
 LRESULT WINAPI MsgProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam )
 {
+	LRESULT result = 0;
+
 	static POINT cursor_pos;
 	static BOOL show_crosshair = TRUE;
 
@@ -203,64 +206,42 @@ LRESULT WINAPI MsgProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam )
 			break;
 
 		case WM_SYSKEYDOWN:
-			if (wParam == VK_MENU)
-			{
-				//menu_override_game_free_look = TRUE;
-				return 0;
-			}
 			break;
 
 		case WM_SYSKEYUP:
-			if (wParam == VK_MENU)
-			{
-				//menu_override_game_free_look = FALSE;
-				return 0;
-			}
 			break;
 
 		case WM_KEYDOWN:
-			switch (wParam)
-			{
-				case VK_CONTROL:
-					//menu_override_game_boost = TRUE;
-					break;
-				case VK_SHIFT:
-					//menu_override_game_stop = TRUE;
-					break;
-				case VK_SPACE:
-					//menu_override_game_bite = TRUE;
-					break;
-				case 0x52:
-					//menu_override_game_restart = TRUE;
-					break;
-			}
+		{
+			if (wParam == VK_LEFT || wParam == 'A')
+				left_engine_override = TRUE;
+
+			if (wParam == VK_RIGHT || wParam == 'D')
+				right_engine_override = TRUE;
+
 			break;
+		}
 
 		case WM_KEYUP:
-			switch (wParam)
-			{
-				case VK_CONTROL:
-					//menu_override_game_boost = FALSE;
-					break;
-					break;
-				case VK_SHIFT:
-					//menu_override_game_stop = FALSE;
-					break;
-				case VK_SPACE:
-					//menu_override_game_bite = FALSE;
-					break;
-				case 0x52:
-					//menu_override_game_restart = FALSE;
-					break;
-			}
+		{
+			if (wParam == VK_LEFT || wParam == 'A')
+				left_engine_override = FALSE;
+
+			if (wParam == VK_RIGHT || wParam == 'D')
+				right_engine_override = FALSE;
+
 			break;
+		}
 		
 		case WM_DESTROY:
 			PostQuitMessage(0);
 			return 0;
+
+		default:
+			result = DefWindowProc(hWnd, msg, wParam, lParam);
 	}
 
-	return DefWindowProc( hWnd, msg, wParam, lParam );
+	return result;
 }
 
 int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
